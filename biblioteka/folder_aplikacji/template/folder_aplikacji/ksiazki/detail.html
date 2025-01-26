@@ -1,0 +1,12 @@
+{% extends "folder_aplikacji/base.html" %}
+
+{% block title %}{{ ksiazki.tytul }}{% endblock %}
+
+{% block content %}
+<p>Tytuł: {{ ksiazki.tytul }}</p>
+<p>Autor: {{ ksiazki.autor }}</p>
+<p>Kategoria: {{ ksiazki.kategoria }}</p>
+<p>Rok publikacji: {{ ksiazki.rok_publikacji }}</p>
+<p>Język: {{ ksiazki.jezyk }}</p>
+<p>Dostępność: {{ ksiazki.status }}</p>
+{% endblock %}

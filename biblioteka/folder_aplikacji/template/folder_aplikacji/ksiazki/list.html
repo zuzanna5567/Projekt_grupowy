@@ -1,0 +1,16 @@
+{% extends "folder_aplikacji/base.html" %}
+
+{% block title %}Ksiązki w bibliotece{% endblock %}
+
+{% block content %}
+Aktualnie w bibliotece posiadamy następujące ksiązki.
+{% for ksiazka in ksiazkas %}
+<p>Tytuł: {{ ksiazka.tytul }}</p>
+<p>Autor: {{ ksiazka.autor }}</p>
+<p>Kategoria: {{ ksiazka.kategoria }}</p>
+<p>Rok publikacji: {{ ksiazka.rok_publikacji }}</p>
+<p>Język: {{ ksiazka.jezyk }}</p>
+<p>Dostępność: {{ ksiazka.status }}</p>
+<hr>
+{% endfor %}
+{% endblock %}
